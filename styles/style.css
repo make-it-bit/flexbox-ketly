@@ -1,46 +1,65 @@
 body {
-  background-color: #f0f8ff;
+  height: 100vh;
+  background-color: rgb(30, 35, 42);
+}
+
+.navbars {
+  position: sticky;
+  top: 0;
+  background-color: rgb(42, 46, 52);
+}
+
+.navbar-1 {
+  height: 50px;
+}
+
+.navbar-2 {
+  height: 35px;
+  border-top: 0.5px solid rgb(123, 123, 123);
+  border-bottom: 0.5px solid rgb(123, 123, 123);
 }
 
 .content {
-  min-height: 100vh;
-  margin: 75px;
+  margin: 5px 25px;
+  overflow-x: auto;
 }
 
-h1 {
-  font-weight: lighter;
-  text-align: center;
-  color: rgb(81, 81, 252);
-  margin: 25px 0 40px 0;
-}
-
-.flex-container {
+.status-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
 }
 
-.flex-container > div {
-  background-color: rgb(202, 202, 254);
-  margin: 10px;
-  padding: 20px;
-  width: 80%;
-  min-height: 150px;
+.status {
+  display: block;
+}
+
+.status-bar {
+  background-color: rgb(48, 53, 60);
+  border-top: 4px solid rgb(123, 123, 123);
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin: 10px 10px 35px 10px;
+  padding: 5px;
+  width: 235px;
+  height: 30px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 650px) {
-  .flex-container {
-    flex-direction: row;
-    overflow-x: auto;
-    justify-content: flex-start;
-  }
-  .flex-container > div {
-    min-width: 100px;
-  }
+.task-container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  height: 400px;
+  margin-right: 10px;
+}
 
-  .flex-container::-webkit-scrollbar {
-    display: none;
-  }
+.task {
+  background-color: rgb(48, 53, 60);
+  border-radius: 5px;
+  flex-shrink: 0;
+  margin: 5px 0 5px 10px;
+  padding: 5px;
+  width: 210px;
+  height: 100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
