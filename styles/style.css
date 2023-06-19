@@ -1,17 +1,13 @@
 body {
   background-color: #f0f8ff;
-}
-
-.content {
-  /* min-height: 100vh;
-  margin: 75px; */
+  min-height: 100vh;
 }
 
 h1 {
   font-weight: lighter;
   text-align: center;
   color: rgb(81, 81, 252);
-  /* margin: 25px 0 40px 0; */
+  padding-top: 25px;
 }
 
 .flex-container {
@@ -30,14 +26,19 @@ h1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-@media only screen and (max-width: 650px) {
+.flex-container {
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px) {
   .flex-container {
     flex-direction: row;
-    overflow-x: auto;
     justify-content: flex-start;
+    overflow-x: auto;
   }
   .flex-container > div {
     min-width: 100px;
+    margin: 0 15px 0 15px;
   }
 
   .flex-container::-webkit-scrollbar {
