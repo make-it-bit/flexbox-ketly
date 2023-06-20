@@ -1,1 +1,142 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: 600px;
+  background-color: #d3d3d3;
+}
 
+.navbar {
+  flex-grow: 1;
+  min-height: 55px;
+  background-color: #000000;
+  border-radius: 10px;
+  margin: 25px;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  overflow-y: auto;
+  /*overflow-x: hidden;*/
+  margin: 0 25px 25px 25px;
+  gap: 20px;
+}
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.setting-item {
+  flex-shrink: 0;
+  height: 45px;
+  min-width: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: #d3d3d3 solid 1px;
+}
+
+.right-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-height: 100%;
+  gap: 20px;
+}
+
+.top-container {
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+}
+
+.top-left-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 150px;
+  width: 30%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.option-item {
+  flex-grow: 1;
+  height: 45%;
+  width: 40%;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+}
+
+.top-right-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.info-item {
+  flex-grow: 1;
+  height: 100%;
+  min-width: 200px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: #d3d3d3 solid 1px;
+}
+
+.bottom-container {
+  display: flex;
+  flex-grow: 1;
+  overflow: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.table-item {
+  max-height: 100%;
+  max-width: 100%;
+  text-align: justify;
+}
+
+@media only screen and (max-height: 700px) {
+  body {
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .top-right-container {
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
