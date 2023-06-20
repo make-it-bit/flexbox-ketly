@@ -2,12 +2,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-color: rgb(30, 35, 42);
+  background-color: #1e232a;
 }
 
 .navbars {
   /*flex-grow: 1;*/
-  background-color: rgb(42, 46, 52);
+  background-color: #2a2e34;
 }
 
 .navbar-1 {
@@ -16,8 +16,8 @@ body {
 
 .navbar-2 {
   height: 35px;
-  border-top: 0.5px solid rgb(123, 123, 123);
-  border-bottom: 0.5px solid rgb(123, 123, 123);
+  border-top: 0.5px solid #7b7b7b;
+  border-bottom: 0.5px solid #7b7b7b;
 }
 
 .content {
@@ -42,12 +42,12 @@ body {
 }
 
 .status-bar {
-  background-color: rgb(48, 53, 60);
-  border-top: 4px solid rgb(123, 123, 123);
+  background-color: #30353c;
+  border-top: 4px solid #7b7b7b;
   border-radius: 5px;
   flex-shrink: 0;
   height: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 #00000033;
 }
 
 .task-container {
@@ -60,13 +60,13 @@ body {
 }
 
 .task {
-  background-color: rgb(48, 53, 60);
+  background-color: #30353c;
   border-radius: 5px;
   flex-shrink: 0;
   margin-top: 12px;
   min-width: 200px;
   height: 100px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 #00000033;
 }
 
 #first-task {
