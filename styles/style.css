@@ -69,6 +69,6 @@ body {
   box-shadow: 0 4px 8px 0 #00000033;
 }
 
-#first-task {
+.task:first-child {
   margin-top: 0;
 }
