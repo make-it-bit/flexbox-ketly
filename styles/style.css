@@ -119,13 +119,15 @@ h1 {
   overflow: auto;
   background-color: #ffffff;
   border-radius: 10px;
+  flex-direction: column;
   padding: 20px;
 }
 
 .table-item {
-  max-height: 100%;
-  max-width: 100%;
-  text-align: justify;
+  /* max-height: 100%;
+  max-width: 100%; */
+  /* text-align: justify; */
+  flex-grow: 1;
 }
 
 @media only screen and (max-height: 700px) {
